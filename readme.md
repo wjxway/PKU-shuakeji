@@ -29,26 +29,26 @@
 3. 滑到最后，运行代码ShuaKeJi[]。**在这之后你都不应该碰触浏览器！**
 4. 你应该马上看见如下界面：
 
-![登录界面](https://i.loli.net/2020/02/17/lAcB5zdrR2DYLJt.png)
+![登录界面](https://raw.githubusercontent.com/wjxway/image-storage/master/shuakeji1.png)
 
 5. **一定在右侧Mathematica窗口中输入学号和密码！否则无法在意外退出后恢复！**
 6. 点击Login并登录成功后你应该见到Mathematica弹出如下界面：
 
-![选课界面](https://i.loli.net/2020/02/17/HCBkvGpaPwscEVh.png)
+![选课界面](https://raw.githubusercontent.com/wjxway/image-storage/master/shuakeji2.png)
 
 7. 选择多门需要的课（注意左上角点击不同页数翻页哦），点击Confirm，并再次点击Correct确认即可。若需要返回请点击右下角的Edit。
 
-   ![确认界面](https://i.loli.net/2020/02/17/GpSY2PlXjsqWoby.png)
+   ![确认界面](https://raw.githubusercontent.com/wjxway/image-storage/master/shuakeji3.png)
 
 8. 确认后即开始刷课，假如你看见Chrome在刷来刷去的话，那就对了！就放手吧！
 
 9. (*高级操作*)自动退课：进入上图界面后，例如我们希望能选上流体力学的话就退掉广相，那么就点击流体力学一栏右侧的Edit键，你应该看见如下界面：
 
-![自动退课](https://i.loli.net/2020/02/17/XpskxzjZydwbEuL.png)
+![自动退课](https://raw.githubusercontent.com/wjxway/image-storage/master/shuakeji4.png)
 
 10. 选择广相，并保存。这时候流体力学左侧会出现下拉菜单的按钮，点开你应该可以看到如下的界面。
 
-![确认界面2](https://i.loli.net/2020/02/17/esh2tz14EBnuAlx.png)
+![确认界面2](https://raw.githubusercontent.com/wjxway/image-storage/master/shuakeji5.png)
 
 11. 如果没问题了，确认好后点击Correct即可。
 
