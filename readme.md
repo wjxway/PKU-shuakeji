@@ -5,15 +5,15 @@
 
 ## 基本情况
 
-**运行需求：**Mathematica 11.0+ ，Chrome最新版。（注：Raspberry Pi自带Mathematica，所以可以很方便的在Raspberry Pi上托管！）Mathematica安装请见<u>[这里](https://tiebamma.github.io/InstallTutorial/)</u>，请注意一定要下载Mathematica而非Wolfram Engine，目前推荐下载11.3版本，下载12.0版本的请注意一定不要把现在这个文件放在中文目录下（其实好习惯是不要把任何东西放在带有中文的目录下）.
+**运行需求：** Mathematica 11.0+ ，Chrome最新版。（注：Raspberry Pi自带Mathematica，所以可以很方便的在Raspberry Pi上托管！）Mathematica安装请见<u>[这里](https://tiebamma.github.io/InstallTutorial/)</u>，请注意一定要下载Mathematica而非Wolfram Engine，目前推荐下载11.3版本，下载12.0版本的请注意一定不要把现在这个文件放在中文目录下（其实好习惯是不要把任何东西放在带有中文的目录下）.
 
-**基本功能：** **支持普通选课，本科生双学位选课，研究生选课**自动输入验证码（总体正确率约为93%），自动选课，自动退课（例如如果什么课出现空位，则退掉其它几门课，如果选课失败会立刻尝试补回来。）。程序有友善的Mathematica界面。
+**基本功能：** **支持普通选课，本科生双学位选课，研究生选课.** 会自动输入验证码（总体正确率约为93%），自动选课，自动退课（例如如果什么课出现空位，则退掉其它几门课，如果选课失败会立刻尝试补回来。）。程序有友善的Mathematica界面。
 
-**实现方法：**以Mathematica为控制/计算平台，通过Chrome Driver托管Google Chrome浏览器实现，所以理论上是和人刷是没有任何区别的（除了刷的频次会高很多）。
+**实现方法：** 以Mathematica为控制/计算平台，通过Chrome Driver托管Google Chrome浏览器实现，所以理论上是和人刷是没有任何区别的（除了刷的频次会高很多）。
 
 **一些细节：**
 
-0. 如果你有Mathematica它将十分方便，下载直接运行即可，**无需任何额外配置**，即下即用。
+0. 如果你有Mathematica它将十分方便，下载直接运行即可， **无需任何额外配置** ，即下即用。
 1. 如果你没有Mathematica，唯一的麻烦是Mathematica的下载&破解（文件比较大），安装也是无脑安装，还是无需额外繁琐的配置！
 2. 去年曾尝试过一晚上刷新，没问题的，长时间运行是可靠的。
 3. 目前还没听说过谁的课被这个选课机退光了2333（毕竟也没几个人用
@@ -29,7 +29,7 @@
 0. 先激活安装Mathematica/Chrome
 1. 打开 **选课机.nb** 文件，依次确认各个事项。
 2. 在每次使用前，点击 菜单栏->Evaluation(计算)->Evaluate Initialization Cells(计算初始化单元)
-3. 滑到最后，运行代码ShuaKeJi[]。**在这之后你都不应该碰触浏览器！**
+3. 滑到最后，运行代码ShuaKeJi\[\]。 **在这之后你都不应该碰触浏览器！**
 4. 你应该马上看见如下界面：
 
 ![登录界面](https://raw.githubusercontent.com/wjxway/image-storage/master/shuakeji1.png)
