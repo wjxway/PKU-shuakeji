@@ -1,14 +1,13 @@
 # 北大刷课机
 
-**最后更新于 2020年2月17日**
-
-**若有研究生/双学位选课请联系微信wjxway**
+**最后更新于 2020年2月25日**
+**本次更新更新了双学位/研究生选课的支持**
 
 ## 基本情况
 
 **运行需求：**Mathematica 11.0+ ，Chrome最新版。（注：Raspberry Pi自带Mathematica，所以可以很方便的在Raspberry Pi上托管！）Mathematica安装请见<u>[这里](https://tiebamma.github.io/InstallTutorial/)</u>，请注意一定要下载Mathematica而非Wolfram Engine，目前推荐下载11.3版本，下载12.0版本的请注意一定不要把现在这个文件放在中文目录下（其实好习惯是不要把任何东西放在带有中文的目录下）.
 
-**基本功能：**自动输入验证码（总体正确率约为93%），自动选课，自动退课（例如如果什么课出现空位，则退掉其它几门课，如果选课失败会立刻尝试补回来。），友善的Mathematica界面。
+**基本功能：** **支持普通选课，本科生双学位选课，研究生选课**自动输入验证码（总体正确率约为93%），自动选课，自动退课（例如如果什么课出现空位，则退掉其它几门课，如果选课失败会立刻尝试补回来。）。程序有友善的Mathematica界面。
 
 **实现方法：**以Mathematica为控制/计算平台，通过Chrome Driver托管Google Chrome浏览器实现，所以理论上是和人刷是没有任何区别的（除了刷的频次会高很多）。
 
@@ -36,6 +35,9 @@
 ![登录界面](https://raw.githubusercontent.com/wjxway/image-storage/master/shuakeji1.png)
 
 5. **一定在右侧Mathematica窗口中输入学号和密码！否则无法在意外退出后恢复！**
+
+5.1 如果是双学位的同学则需要再进行一步，选择到底需要刷主修还是辅双的课程。
+
 6. 点击Login并登录成功后你应该见到Mathematica弹出如下界面：
 
 ![选课界面](https://raw.githubusercontent.com/wjxway/image-storage/master/shuakeji2.png)
@@ -61,4 +63,5 @@
 ## 免责声明
 
 本程序仅用于学习交流，不建议同学过量使用本刷课机刷课，干扰选课秩序。本人不对该选课机造成的**一切**后果（例如由于使用不当退光了你的课！）担责！！！！
+如果出现问题，欢迎通过wjxway@163.com或者wx: wjxway进行反馈。
 
