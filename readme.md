@@ -6,7 +6,7 @@
 
 ## 基本情况
 
-**运行需求：** Mathematica 11.0+ ，Chrome最新版。（注：Raspberry Pi自带Mathematica，所以可以很方便的在Raspberry Pi上托管！）Mathematica安装请见<u>[这里](https://tiebamma.github.io/InstallTutorial/)</u>，请注意一定要下载Mathematica而非Wolfram Engine，目前推荐下载11.3版本，下载12.0版本的请注意一定不要把现在这个文件放在中文目录下（其实好习惯是不要把任何东西放在带有中文的目录下）.
+**运行需求：** Mathematica 11.0+ ，Chrome最新版（目前是83.0版本，亲测可用）。（注：Raspberry Pi自带Mathematica，所以可以很方便的在Raspberry Pi上托管！）Mathematica安装请见<u>[这里](https://tiebamma.github.io/InstallTutorial/)</u>，请注意一定要下载Mathematica而非Wolfram Engine，目前推荐下载11.3版本，下载12.0版本的请注意一定不要把现在这个文件放在中文目录下（其实好习惯是不要把任何东西放在带有中文的目录下）.
 
 **基本功能：** **支持普通选课，本科生双学位选课，研究生选课.** 会自动输入验证码（总体正确率约为93%），自动选课，自动退课（例如如果什么课出现空位，则退掉其它几门课，如果选课失败会立刻尝试补回来。）。程序有友善的Mathematica界面。
 
@@ -39,7 +39,7 @@
 
 5.1 如果是双学位的同学则需要再进行一步，选择到底需要刷主修还是辅双的课程。
 
-6. 点击Login并登录成功后你应该见到Mathematica弹出如下界面：
+6. 点击Login并登录成功后你应该见到Mathematica弹出如下界面。如果没有弹出那是浏览器和驱动的问题，请参见后面**可能遇到的问题**部分：
 
 ![选课界面](https://raw.githubusercontent.com/wjxway/image-storage/master/shuakeji2.png)
 
@@ -61,10 +61,39 @@
 
 12. 如果碰到了问题，例如不小心关掉了什么窗口，那么你可以在Mathematica里面同时点按“Alt”和“.”键来停止运算，然后重新从第二步开始即可。实在搞不懂这个的话就完全关掉Mathematica重来一次也行。
 
-13. Note: 假如你的整个选课计划只有一页，那么你的Chrome应该不动，只要Mathematica还在运行这就是没问题的！Mathematica会点击刷新，只不过我禁用了所有的Alert所以你看不见弹出的“课程人数没有变化！”罢了~假如你觉得虚就请狂添加课程直到列表有两页，那你就能看到Mathematica翻页啦~
+
+## 可能遇到的问题
+
+1. 在运行代码后没有弹出Chrome！
+
+    a) 检查你是否仔细阅读了.nb文件里面的注意事项，极有可能是你没有运行初始化单元或者安装WebTools包失败了。
+   
+    b) 如果Mathematica弹出了一个输入用户名密码的窗口，且报了StringFreeQ打头的错误，请更新一下Chrome版本（目前83.0版本可用）。如果你实在不方便更新的话可以如下操作：
+   
+      i. 先确认你的Chrome版本号，如这里以79.0为例
+     
+      ii. [点击这里](http://npm.taobao.org/mirrors/chromedriver)并下载对应版本和操作系统的Chrome驱动
+      
+      iii. 在Mathematica中运行
+      
+      ```mathematica
+      SystemOpen[$UserBaseDirectory<>"\\Paclets\\Repository\\WebTools-0.1.1\\WebDriver\\ChromeDriver"
+      ```
+      
+      并把下载下来的驱动文件拷贝到对应的文件夹下覆盖（什么系统的你就进什么子文件夹）。
+      
+   c) 如果还是不行请汇报bug，十分感谢！！！
+   
+2. 我选好了我需要的课，点击了确认，但是似乎浏览器页面没动静啊？
+
+    假如你的整个选课计划只有一页，那么你的Chrome应该不动，只要Mathematica还在运行这就是没问题的！Mathematica会点击刷新，只不过我禁用了所有的Alert所以你看不见弹出的“课程人数没有变化！”罢了。~假如你觉得虚就请狂添加课程直到列表有两页，那你就能看到Mathematica翻页啦~
+
+3. 我遇到了其他问题！
+
+    请汇报bug，十分感谢！！！
 
 ## 免责声明
 
 本程序仅用于学习交流，不建议同学过量使用本刷课机刷课，干扰选课秩序。本人不对该选课机造成的**一切**后果（例如由于使用不当退光了你的课！）担责！！！！
-如果出现问题，欢迎通过wjxway@163.com或者wx: wjxway进行反馈。
+如果出现问题，欢迎提出issue或者通过wjxway@163.com或者vx: wjxway进行反馈。
 
