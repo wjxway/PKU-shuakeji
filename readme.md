@@ -68,21 +68,37 @@
 
     a) 检查你是否仔细阅读了.nb文件里面的注意事项，极有可能是你没有运行初始化单元或者安装WebTools包失败了。
    
-    b) 如果Mathematica弹出了一个输入用户名密码的窗口，且报了StringFreeQ打头的错误，请更新一下Chrome版本（目前83.0版本可用）。如果你实在不方便更新的话可以如下操作：
+    b) 如果Mathematica弹出了一个输入用户名密码的窗口，且报了StringFreeQ打头的错误，那这多半是Mathematica的锅！
+    
+      i. 请先在Mathematica里面运行
+      
+      ```mathematica
+      SystemOpen[$UserBaseDirectory<>"\\Paclets\\Repository\\WebTools-0.1.1\\WebDriver\\ChromeDriver"]
+      ```
+      
+      应该会打开一个窗口.
+      
+      ii. 请完全关闭Mathematica。
+      
+      iii. 而后打开刚刚打开的文件夹下对应操作系统的可执行文件，例如Windows的话就打开Windows-x86-64文件夹下的chromedriver.exe。
+      
+      iv. 重新打开Mathematica，从头开始运行，应该就可以了。
+      
+   c) 如果上述方法仍然不行请更新一下Chrome版本（目前83.0版本亲测可用）。如果你实在不方便更新的话可以如下操作：
    
-      i. 先确认你的Chrome版本号，如这里以79.0为例
+      i. 先确认你的Chrome版本号，如68.0.xxxxx。
      
       ii. [点击这里](http://npm.taobao.org/mirrors/chromedriver)并下载对应版本和操作系统的Chrome驱动
       
       iii. 在Mathematica中运行
       
       ```mathematica
-      SystemOpen[$UserBaseDirectory<>"\\Paclets\\Repository\\WebTools-0.1.1\\WebDriver\\ChromeDriver"
+      SystemOpen[$UserBaseDirectory<>"\\Paclets\\Repository\\WebTools-0.1.1\\WebDriver\\ChromeDriver"]
       ```
       
       并把下载下来的驱动文件拷贝到对应的文件夹下覆盖（什么系统的你就进什么子文件夹）。
       
-   c) 如果还是不行请汇报bug，十分感谢！！！
+   d) 如果还是不行请汇报bug，十分感谢！！！
    
 2. 我选好了我需要的课，点击了确认，但是似乎浏览器页面没动静啊？
 
