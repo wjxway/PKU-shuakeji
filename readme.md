@@ -8,6 +8,7 @@
 
 **强烈建议如果你没有Mathematica，则使用[这个](https://github.com/zhongxinghong/PKUAutoElective)刷课机**
 **经常有同学在配置ChromeDriver的过程中出现问题，所以没有Mathematica的慎用这个选课机（下载安装一套下来，如果还不成那真的太难过了）**
+**如果出现问题，请看下面的“可能遇到的问题”部分**
 
 **运行需求：** Mathematica 11.0+ ，Chrome最新版（目前是83.0版本，亲测可用）。（注：Raspberry Pi自带Mathematica，所以可以很方便的在Raspberry Pi上托管！）Mathematica安装请见<u>[这里](https://tiebamma.github.io/InstallTutorial/)</u>，请注意一定要下载Mathematica而非Wolfram Engine，目前推荐下载11.3版本，下载12.0版本的请注意一定**不要**把现在这个文件放在中文目录下（其实好习惯是不要把任何东西放在带有中文的目录下）.
 
