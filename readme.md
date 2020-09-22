@@ -6,7 +6,10 @@
 
 ## 基本情况
 
-**运行需求：** Mathematica 11.0+ ，Chrome最新版（目前是83.0版本，亲测可用）。（注：Raspberry Pi自带Mathematica，所以可以很方便的在Raspberry Pi上托管！）Mathematica安装请见<u>[这里](https://tiebamma.github.io/InstallTutorial/)</u>，请注意一定要下载Mathematica而非Wolfram Engine，目前推荐下载11.3版本，下载12.0版本的请注意一定不要把现在这个文件放在中文目录下（其实好习惯是不要把任何东西放在带有中文的目录下）.
+**强烈建议如果你没有Mathematica，则使用[这个](https://github.com/zhongxinghong/PKUAutoElective)刷课机**
+**经常有同学在配置ChromeDriver的过程中出现问题，所以没有Mathematica的慎用这个选课机（下载安装一套下来，如果还不成那真的太难过了）**
+
+**运行需求：** Mathematica 11.0+ ，Chrome最新版（目前是83.0版本，亲测可用）。（注：Raspberry Pi自带Mathematica，所以可以很方便的在Raspberry Pi上托管！）Mathematica安装请见<u>[这里](https://tiebamma.github.io/InstallTutorial/)</u>，请注意一定要下载Mathematica而非Wolfram Engine，目前推荐下载11.3版本，下载12.0版本的请注意一定**不要**把现在这个文件放在中文目录下（其实好习惯是不要把任何东西放在带有中文的目录下）.
 
 **基本功能：** **支持普通选课，本科生双学位选课，研究生选课.** 会自动输入验证码（总体正确率约为93%），自动选课，自动退课（例如如果什么课出现空位，则退掉其它几门课，如果选课失败会立刻尝试补回来。）。程序有友善的Mathematica界面。
 
