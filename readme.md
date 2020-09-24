@@ -4,6 +4,8 @@
 
 **本次更新适配了研究生新版选课界面**
 
+**研究生弹窗问题的解决方案请见后面“可能遇到的问题”部分**
+
 ## 基本情况
 
 **强烈建议如果你没有Mathematica，则使用[这个](https://github.com/zhongxinghong/PKUAutoElective)刷课机**
@@ -109,8 +111,20 @@
 2. 我选好了我需要的课，点击了确认，但是似乎浏览器页面没动静啊？
 
     假如你的整个选课计划只有一页，那么你的Chrome应该不动，只要Mathematica还在运行这就是没问题的！Mathematica会点击刷新，只不过我禁用了所有的Alert所以你看不见弹出的“课程人数没有变化！”罢了。~假如你觉得虚就请狂添加课程直到列表有两页，那你就能看到Mathematica翻页啦~
+    
+3. 研究生本学期会弹窗，所以会阻挡代码运行，请遵照如下流程：
+   - 运行shuakeji
+   - 输入账号密码，应该弹出通知然后报bug
+   - 进入mathematica按Alt+.停止运算
+   - 手动进入补退选界面
+   - 然后再运行如下代码：
+   ```
+   If[CheckInit[], Block[{function, c = 0, time = Now}, If[(function = courseDialog[]) === $Failed, Return[]];
+       While[With[{js = wtJavascriptExecute["return window.location.href;"]}, 
+       function[[1, 1]] =!= {} && Head[js] === String], function = ReleaseHold[function]; c++; Pause@RandomReal[{2, 3}]]]]
+   ```
 
-3. 我遇到了其他问题！
+4. 我遇到了其他问题！
 
     请汇报bug，十分感谢！！！
 
