@@ -117,12 +117,13 @@
    - 输入账号密码，应该弹出通知然后报bug
    - 进入mathematica按Alt+.停止运算
    - 手动进入补退选界面
-   - 然后再运行如下代码：
+   - 然后再新开一个Cell运行如下代码：
    ```
    If[CheckInit[], Block[{function, c = 0, time = Now}, If[(function = courseDialog[]) === $Failed, Return[]];
        While[With[{js = wtJavascriptExecute["return window.location.href;"]}, 
        function[[1, 1]] =!= {} && Head[js] === String], function = ReleaseHold[function]; c++; Pause@RandomReal[{2, 3}]]]]
    ```
+   请注意，别直接在``shuakeji[]``后面拷贝这段代码运行，一定在``shuakeji[]``下方点一下（应该会出现一条横线），然后再拷贝运行。
 
 4. 我遇到了其他问题！
 
